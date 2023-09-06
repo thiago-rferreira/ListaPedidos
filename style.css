@@ -1,0 +1,162 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#f5ebdc;
+}
+.container-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 10px;
+    margin:10px;
+    gap: 10px;
+}
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color:  rgba(255, 255, 255, 0.401);
+    width: 65%;
+    -webkit-box-shadow: 9px 9px 26px 1px rgba(0, 0, 0, 0.7); 
+    box-shadow: 9px 9px 26px 1px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 300px;
+}
+.container-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    background-color:  rgba(255, 255, 255, 0.401);
+    width: 45%;
+    -webkit-box-shadow: 9px 9px 26px 1px rgba(0, 0, 0, 0.7); 
+    box-shadow: 9px 9px 26px 1px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 300px;
+    max-height: 850px;
+    overflow-y: auto;
+}
+
+#containerJS{
+    padding: 20px;
+}
+
+h2{
+    color: #F2911B;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#list-orders{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border-left: 6px solid #F2911B;
+    border-radius: 8px;
+    margin: 20px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+button{
+    width: 300px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(255, 157, 0);
+    padding: 5px;
+    background-color: rgb(255, 157, 0);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(243, 176, 69);
+    color: white;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+.erro{
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.sucesso{
+    color: green;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contator-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+}
+
+.contator-div h2{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilize a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilize o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 157, 0); /* Cor do polegar da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada do polegar da barra de rolagem */
+}
+
+/* Estilize a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Cor da trilha da barra de rolagem */
+}

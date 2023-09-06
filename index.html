@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sistema restaurante</title>
+</head>
+<body>
+    <div class="container-main">
+        <div class="container-inputs">
+            <h2>Cadastro de Pedidos</h2>
+            <input type="text" name="cliente" id="cliente" placeholder="Cliente">
+            <input type="text" name="mesa" id="mesa" placeholder="Mesa">
+            <input type="text" name="descricao" id="descricao" placeholder="Descrição">
+            <button type="button" id="btn-cadastrar" onclick="addPedido()">Cadastrar</button>
+            <button type="button" id="btn-editar" class="hidden" onclick="editarPedido()">Editar</button>
+            <p id="msg"></p>
+
+        </div>
+        <div class="container-list">
+            <div class="contator-div">
+                <h2>Lista de Pedidos</h2>
+                <h2 id="contador" class="hidden"></h2>
+            </div>
+            <div id="containerJS">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
